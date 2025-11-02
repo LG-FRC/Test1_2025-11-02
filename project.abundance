@@ -18,8 +18,8 @@
     {
       "atomType": "RegularPolygon",
       "name": "RegularPolygon",
-      "x": 0.28731942215088285,
-      "y": 0.43583535108958843,
+      "x": 0.26886035313001605,
+      "y": 0.513317191283293,
       "uniqueID": "id-4",
       "ioValues": [
         {
@@ -29,20 +29,79 @@
         },
         {
           "name": "diameter",
-          "ioValue": 10
+          "ioValue": 20,
+          "currentEquation": "20"
         }
       ]
     },
     {
       "atomType": "Extrude",
       "name": "Extrude",
-      "x": 0.3873194221508829,
-      "y": 0.43583535108958843,
+      "x": 0.42857142857142855,
+      "y": 0.2929782082324455,
       "uniqueID": "id-8",
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 10
+          "ioValue": 10,
+          "currentEquation": "10"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "name": "Move",
+      "x": 0.3688603531300161,
+      "y": 0.513317191283293,
+      "uniqueID": "id-12",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "name": "Assembly",
+      "x": 0.46886035313001606,
+      "y": 0.513317191283293,
+      "uniqueID": "id-18",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "move-polysides-10-6-0-0-0",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
         }
       ]
     }
@@ -53,6 +112,18 @@
       "ap2Name": "geometry",
       "ap1ID": "id-4",
       "ap2ID": "id-8"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "id-4",
+      "ap2ID": "id-12"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-12",
+      "ap2ID": "id-18"
     }
   ],
   "unitsKey": "Inches",
