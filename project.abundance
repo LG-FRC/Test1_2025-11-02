@@ -18,8 +18,8 @@
     {
       "atomType": "RegularPolygon",
       "name": "RegularPolygon",
-      "x": 0.26886035313001605,
-      "y": 0.513317191283293,
+      "x": 0.2696629213483146,
+      "y": 0.5036319612590799,
       "uniqueID": "id-4",
       "ioValues": [
         {
@@ -51,13 +51,14 @@
     {
       "atomType": "Move",
       "name": "Move",
-      "x": 0.3688603531300161,
-      "y": 0.513317191283293,
+      "x": 0.37479935794542535,
+      "y": 0.7554479418886199,
       "uniqueID": "id-12",
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 0
+          "ioValue": null,
+          "currentEquation": "`"
         },
         {
           "name": "yDist",
@@ -78,30 +79,7 @@
       "ioValues": [
         {
           "name": "Shape 1",
-          "ioValue": {
-            "geometry": "move-polysides-10-6-0-0-0",
-            "dimension": "2D",
-            "tags": [],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "bom": []
-          }
+          "ioValue": null
         }
       ]
     }
