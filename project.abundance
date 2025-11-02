@@ -1,15 +1,62 @@
 {
-    "atomType": "Molecule",
-    "name": "Test1_2025-11-02",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "ioValues": [],
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "Inches",
-    "fileTypeVersion": 1,
-    "compiledBom": {},
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "name": "Test1_2025-11-02",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "ioValues": [],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "name": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": []
+    },
+    {
+      "atomType": "RegularPolygon",
+      "name": "RegularPolygon",
+      "x": 0.28731942215088285,
+      "y": 0.43583535108958843,
+      "uniqueID": "id-4",
+      "ioValues": [
+        {
+          "name": "number of sides",
+          "ioValue": 6,
+          "currentEquation": "6"
+        },
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "name": "Extrude",
+      "x": 0.3873194221508829,
+      "y": 0.43583535108958843,
+      "uniqueID": "id-8",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "id-4",
+      "ap2ID": "id-8"
+    }
+  ],
+  "unitsKey": "Inches",
+  "fileTypeVersion": 1,
+  "compiledBom": {},
+  "filetypeVersion": 1
 }
